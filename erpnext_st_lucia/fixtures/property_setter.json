@@ -1,0 +1,53 @@
+
+[
+  {
+    "doctype": "Property Setter",
+    "name": "Customer-country-default",
+    "doc_type": "Customer",
+    "doctype_or_field": "DocField",
+    "field_name": "territory",
+    "property": "default",
+    "property_type": "Text",
+    "value": "Saint Lucia"
+  },
+  {
+    "doctype": "Property Setter",
+    "name": "Address-country-default",
+    "doc_type": "Address",
+    "doctype_or_field": "DocField",
+    "field_name": "country",
+    "property": "default",
+    "property_type": "Text",
+    "value": "Saint Lucia"
+  },
+  {
+    "doctype": "Property Setter",
+    "name": "Company-tax_id-label",
+    "doc_type": "Company",
+    "doctype_or_field": "DocField",
+    "field_name": "tax_id",
+    "property": "label",
+    "property_type": "Data",
+    "value": "Tax Account Number (TAN)"
+  },
+  {
+    "doctype": "Property Setter",
+    "name": "Customer-tax_id-label",
+    "doc_type": "Customer",
+    "doctype_or_field": "DocField",
+    "field_name": "tax_id",
+    "property": "label",
+    "property_type": "Data",
+    "value": "Tax Account Number (TAN)"
+  },
+  {
+    "doctype": "Property Setter",
+    "name": "Supplier-tax_id-label",
+    "doc_type": "Supplier",
+    "doctype_or_field": "DocField",
+    "field_name": "tax_id",
+    "property": "label",
+    "property_type": "Data",
+    "value": "Tax Account Number (TAN)"
+  }
+]

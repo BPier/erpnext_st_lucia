@@ -30,6 +30,36 @@ required_apps = ["erpnext"]
 # `mount_on` on that same record, and its entries are appended to the host's rail. Mounting keeps
 # the companion off the apps screen, so it takes precedence over any add_to_apps_screen above.
 
+
+# Fixtures
+# ------------------
+# Records shipped with this app. They are loaded on install and on every
+# `bench migrate`. The data itself is in: erpnext_st_lucia/fixtures/
+#
+# To add a new setting: add its name to the list below AND add the record
+# to erpnext_st_lucia/fixtures/property_setter.json
+ 
+fixtures = [
+	{
+		"dt": "Property Setter",
+		"filters": [
+			[
+				"name",
+				"in",
+				[
+					# Default country = Saint Lucia
+					"Customer-country-default",
+					"Address-country-default",
+					# Rename "Tax ID" to "TAN"
+					"Company-tax_id-label",
+					"Customer-tax_id-label",
+					"Supplier-tax_id-label",
+				],
+			]
+		],
+	}
+]
+
 # Includes in <head>
 # ------------------
 
