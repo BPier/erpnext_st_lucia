@@ -7,8 +7,8 @@ App for St Lucia localization
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch version-16
+cd frappe-bench
+bench get-app https://github.com/BPier/erpnext_st_lucia --branch version-16
 bench install-app erpnext_st_lucia
 ```
 
