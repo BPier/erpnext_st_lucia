@@ -59,6 +59,8 @@ fixtures = [
 					"Address-city-label",
 					# District (city) suggests the St Lucia districts
 					"Address-city-fieldtype",
+					# State/Province hidden when the country is Saint Lucia
+					"Address-state-depends_on",
 				],
 			]
 		],
@@ -73,6 +75,7 @@ fixtures = [
 # St Lucia changes to the "New Customer" dialog (after a change: bench build --app erpnext_st_lucia)
 app_include_js = [
 	"/assets/erpnext_st_lucia/js/districts.js",  # list of St Lucia districts
+	"/assets/erpnext_st_lucia/js/phone.js",  # "+1 (758) " phone prefix
 	"/assets/erpnext_st_lucia/js/customer_quick_entry.js",
 ]
 

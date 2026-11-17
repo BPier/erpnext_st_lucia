@@ -78,5 +78,15 @@
     "property": "fieldtype",
     "property_type": "Select",
     "value": "Autocomplete"
+  },
+  {
+    "doctype": "Property Setter",
+    "name": "Address-state-depends_on",
+    "doc_type": "Address",
+    "doctype_or_field": "DocField",
+    "field_name": "state",
+    "property": "depends_on",
+    "property_type": "Data",
+    "value": "eval:doc.country != \"Saint Lucia\""
   }
 ]

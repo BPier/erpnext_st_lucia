@@ -6,6 +6,9 @@
   on the Address form and in the New Customer dialog
 - District suggests the 10 St Lucia districts; any other value can still be typed
   for addresses outside St Lucia
+- New Customer dialog: country Saint Lucia by default; the address stays optional
+- State/Province is hidden when the country is Saint Lucia
+- Phone fields suggest "+1 (758) " (Address phone, New Customer mobile); still optional
 
 ## 0.1.0 (2026-10-22)
 
