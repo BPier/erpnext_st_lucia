@@ -1,4 +1,3 @@
-
 [
   {
     "doctype": "Property Setter",
@@ -49,5 +48,45 @@
     "property": "label",
     "property_type": "Data",
     "value": "Tax Account Number (TAN)"
+  },
+  {
+    "doctype": "Property Setter",
+    "name": "Address-address_line1-label",
+    "doc_type": "Address",
+    "doctype_or_field": "DocField",
+    "field_name": "address_line1",
+    "property": "label",
+    "property_type": "Data",
+    "value": "Community"
+  },
+  {
+    "doctype": "Property Setter",
+    "name": "Address-city-label",
+    "doc_type": "Address",
+    "doctype_or_field": "DocField",
+    "field_name": "city",
+    "property": "label",
+    "property_type": "Data",
+    "value": "District"
+  },
+  {
+    "doctype": "Property Setter",
+    "name": "Address-city-fieldtype",
+    "doc_type": "Address",
+    "doctype_or_field": "DocField",
+    "field_name": "city",
+    "property": "fieldtype",
+    "property_type": "Select",
+    "value": "Autocomplete"
+  },
+  {
+    "doctype": "Property Setter",
+    "name": "Address-state-depends_on",
+    "doc_type": "Address",
+    "doctype_or_field": "DocField",
+    "field_name": "state",
+    "property": "depends_on",
+    "property_type": "Data",
+    "value": "eval:doc.country != \"Saint Lucia\""
   }
 ]

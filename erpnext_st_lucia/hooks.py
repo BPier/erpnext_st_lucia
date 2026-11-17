@@ -54,6 +54,13 @@ fixtures = [
 					"Company-tax_id-label",
 					"Customer-tax_id-label",
 					"Supplier-tax_id-label",
+					# Address labels: "Address Line 1" -> "Community", "City/Town" -> "District"
+					"Address-address_line1-label",
+					"Address-city-label",
+					# District (city) suggests the St Lucia districts
+					"Address-city-fieldtype",
+					# State/Province hidden when the country is Saint Lucia
+					"Address-state-depends_on",
 				],
 			]
 		],
@@ -65,7 +72,12 @@ fixtures = [
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/erpnext_st_lucia/css/erpnext_st_lucia.css"
-# app_include_js = "/assets/erpnext_st_lucia/js/erpnext_st_lucia.js"
+# St Lucia changes to the "New Customer" dialog (after a change: bench build --app erpnext_st_lucia)
+app_include_js = [
+	"/assets/erpnext_st_lucia/js/districts.js",  # list of St Lucia districts
+	"/assets/erpnext_st_lucia/js/phone.js",  # "+1 (758) " phone prefix
+	"/assets/erpnext_st_lucia/js/customer_quick_entry.js",
+]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/erpnext_st_lucia/css/erpnext_st_lucia.css"
@@ -82,7 +94,9 @@ fixtures = [
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+	"Address": "public/js/address.js",  # District suggestions
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_kanban_js = {"doctype" : "public/js/doctype_kanban.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
